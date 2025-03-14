@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// ルーティングを設定するコントローラーを宣言する
+use App\Http\Controllers\HelloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hello', function () {
-    return 'Hello, world!';
+Route::get('/', function () {
+    return view('welcome');
 });
+
+Route::get('/hello', [HelloController::class, 'index']);
