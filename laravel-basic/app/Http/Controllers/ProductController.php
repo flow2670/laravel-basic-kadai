@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use App\Models\Product;
+=======
+>>>>>>> c3213fed4b46b6290d4ae089d7c5c4ab997e1e17
 
 class ProductController extends Controller
 {
@@ -16,6 +19,7 @@ class ProductController extends Controller
         //変数$productsをproducts/index.blade.phpファイルに渡す
         return view('products.index', compact('products'));
     }
+<<<<<<< HEAD
 
     public function show($id)
     {
@@ -25,4 +29,6 @@ class ProductController extends Controller
         // 変数$productを$products/show.blade.phpファイルに渡す
         return view('products.show', compact('product'));
     }
+=======
+>>>>>>> c3213fed4b46b6290d4ae089d7c5c4ab997e1e17
 }
